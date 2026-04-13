@@ -116,7 +116,7 @@ function ServiceModal({ service, onClose }: { service: Service; onClose: () => v
 
         {/* Modal */}
         <motion.div
-          className={`relative z-10 w-full max-w-lg glass-card rounded-2xl p-8 border ${service.borderColor}`}
+          className={`relative z-10 w-full max-w-md glass-card rounded-2xl p-5 sm:p-8 border ${service.borderColor} max-h-[90vh] overflow-y-auto`}
           initial={{ opacity: 0, scale: 0.9, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -136,17 +136,17 @@ function ServiceModal({ service, onClose }: { service: Service; onClose: () => v
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl font-bold text-white mb-4 font-[Space_Grotesk]">
+          <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 font-[Space_Grotesk]">
             {service.title}
           </h3>
 
           {/* Description */}
-          <p className="text-slate-400 leading-relaxed mb-6">
+          <p className="text-slate-400 leading-relaxed text-sm sm:text-base mb-5">
             {service.modalDescription}
           </p>
 
           {/* Features */}
-          <ul className="space-y-2 mb-8">
+          <ul className="space-y-2 mb-6">
             {service.features.map((f) => (
               <li key={f} className="flex items-center gap-3 text-sm text-slate-300">
                 <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-br ${service.color} flex-shrink-0`} />
@@ -243,7 +243,7 @@ export default function Services() {
                 {/* Learn more button */}
                 <button
                   onClick={() => setSelectedService(service)}
-                  className="mt-6 flex items-center gap-2 text-sm font-medium text-blue-400 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hover:text-blue-300"
+                  className="mt-6 flex items-center gap-2 text-sm font-medium text-blue-400 md:opacity-0 md:group-hover:opacity-100 md:translate-y-2 md:group-hover:translate-y-0 transition-all duration-300 hover:text-blue-300"
                 >
                   Learn more
                   <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
