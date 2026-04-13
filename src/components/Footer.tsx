@@ -32,10 +32,9 @@ const footerLinks = {
     { name: 'AI & ML', href: '#services' },
   ],
   Contact: [
-    { name: 'hello@wavehub.io', href: '#contact' },
-    { name: '+1 (555) 000-0000', href: '#contact' },
-    { name: 'San Francisco, CA', href: '#contact' },
-    { name: 'Get a Free Quote', href: '#contact' },
+    { name: 'hashirmajeed1447@gmail.com', href: '#contact' },
+    { name: '+92 328 6503324', href: '#contact' },
+{ name: 'Faisalabad, Punjab, Pakistan', href: '#contact' },    { name: 'Get a Free Quote', href: '#contact' },
   ],
 };
 
