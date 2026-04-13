@@ -18,11 +18,12 @@ function InstagramIcon({ className }: { className?: string }) {
 }
 
 const footerLinks = {
-  Company: [
-    { name: 'About Us', href: '#home' },
-    { name: 'Careers', href: '#services' },
-    { name: 'Blog', href: '#portfolio' },
-    { name: 'Press', href: '#contact' },
+  Navigate: [
+    { name: 'Home', href: '#home' },
+    { name: 'Services', href: '#services' },
+    { name: 'Portfolio', href: '#portfolio' },
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Contact', href: '#contact' },
   ],
   Services: [
     { name: 'Web Development', href: '#services' },
@@ -30,11 +31,11 @@ const footerLinks = {
     { name: 'Cloud Solutions', href: '#services' },
     { name: 'AI & ML', href: '#services' },
   ],
-  Resources: [
-    { name: 'Documentation', href: '#portfolio' },
-    { name: 'Case Studies', href: '#portfolio' },
-    { name: 'Partners', href: '#home' },
-    { name: 'Support', href: '#contact' },
+  Contact: [
+    { name: 'hello@wavehub.io', href: '#contact' },
+    { name: '+1 (555) 000-0000', href: '#contact' },
+    { name: 'San Francisco, CA', href: '#contact' },
+    { name: 'Get a Free Quote', href: '#contact' },
   ],
 };
 
